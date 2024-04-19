@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>ArtPlayer</title>
+    <meta charset="UTF-8" />
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="https://js.xmjx.org/Artplayer/artplayer.js?t=2023"></script>
+    <script src="https://js.xmjx.org/Artplayer/1.4.12/hls.min.js"></script>
+</head>
+
+<body>
+    <div class="artplayer-app" style="width: 100%; height: 100%;"></div>
+    <script> const cmsPlayer = parent.cmsPlayer || {}; const playerUrl = cmsPlayer.url; const playerId = cmsPlayer.vod + '-' + cmsPlayer.no; const controls = ['💐 &#32654;&#22899;&#30452;&#25773;', '🌹 &#31119;&#21033;&#35270;&#39057;', '💐 &#21320;&#22812;&#31119;&#21033;']; const index = Math.floor((Math.random() * controls.length)); const art = new Artplayer({ container: '.artplayer-app', autoPlayback: true, url: playerUrl, id: playerId, autoSize: false, fullscreen: true, fullscreenWeb: false, setting: true, playbackRate: true, type: 'm3u8', lang: 'zh-cn', customType: { m3u8: function (video, url, art) { if (Hls.isSupported()) { if (art.hls) art.hls.destroy(); const hls = new Hls(); hls.loadSource(url); hls.attachMedia(video); art.hls = hls; art.on('destroy', () => hls.destroy()); } else if (video.canPlayType('application/vnd.apple.mpegurl')) { video.src = url; } else { art.notice.show = '不支持播放格式:m3u8'; } }, }, controls: [{ position: 'right', html: controls[index], index: 1, tooltip: '福利视频免费看', style: { marginRight: '10px', }, click: function () { const win = /^Mac|Win/.test(navigator.platform || ''); if (!win) { window.open('/api/jump/player'); } } }] });</script>
+</body>
+
+</html>

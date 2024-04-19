@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'JManBuTi';/*漫步*/
+    src: url('JManBuTi.woff2') format('woff2'),
+        url('JManBuTi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JNanGongTi';/*南宫*/
+    src: url('JNanGongTi.woff2') format('woff2'),
+        url('JNanGongTi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JMiMi';/*咪咪*/
+    src: url('JMiMi.woff2') format('woff2'),
+        url('JMiMi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HYg4gj';
+    src: url('HYg4gj.woff2') format('woff2'),
+        url('HYg4gj.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jquwei';/*趣味*/
+    src: url('Jquwei.woff2') format('woff2'),
+        url('Jquwei.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'JChangYi';/*长艺*/
+    src: url('JChangYi.woff2') format('woff2'),
+        url('JChangYi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'DMFinBeiJing';
+    src: url('ByJOSSQ-DMFinBeiJing.woff2') format('woff2'),
+        url('ByJOSSQ-DMFinBeiJing.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JZunYuan';/*准圆*/
+    src: url('JZunYuan.woff2') format('woff2'),
+        url('JZunYuan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JYiHei';/*简艺黑*/
+    src: url('JYiHei.woff2') format('woff2'),
+        url('JYiHei.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JZhongYi';/*简综艺*/
+    src: url('JZhongYi.woff2') format('woff2'),
+        url('JZhongYi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
